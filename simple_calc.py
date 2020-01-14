@@ -8,9 +8,9 @@ def is_digit(string):
         except ValueError:
             return False
 
-def culc(strForCulc):
-    outp = strForCulc
-    str2 = list(strForCulc)
+def calc(strForCalc):
+    outp = strForCalc
+    str2 = list(strForCalc)
     operators ={
         '+': (lambda x, y: x + y),
         '-': (lambda x, y: x - y),
@@ -55,4 +55,4 @@ def decor(f):
     journal.write(result)
     journal.write("\n")
 
-decor(culc)
+decor(calc)
